@@ -12,6 +12,7 @@ function DisplayCompo() {
         case 1: return <FirstStep />
         case 2: return <SecondStep/>
         case 3: return <ThirdStep/>
+        default : return <FirstStep />
     }
     return (
       <>
