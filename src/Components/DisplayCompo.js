@@ -12,11 +12,10 @@ function DisplayCompo() {
         case 1: return <FirstStep />
         case 2: return <SecondStep/>
         case 3: return <ThirdStep/>
-        default : return <FirstStep />
+        default : "Wrong Input"
     }
     return (
       <>
-      {/* {switchCompo(currentStep)}   */}
       {storeData.length >= 1 && <DisplayTable />}
     </>
   )
