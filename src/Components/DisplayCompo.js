@@ -8,14 +8,17 @@ import { DisplayTable } from './DisplayTable';
 
 function DisplayCompo() {
   const {currentStep, storeData } = useContext(createStore)
+    const switchCompo = (currentStep) => {
       switch (currentStep) {
         case 1: return <FirstStep />
         case 2: return <SecondStep/>
         case 3: return <ThirdStep/>
-        default : "Wrong Input"
+        default : return "Hello"
+    }
     }
     return (
       <>
+      {switchCompo(currentStep)}  
       {storeData.length >= 1 && <DisplayTable />}
     </>
   )
